@@ -42,10 +42,37 @@ double calcularIMC(double peso, double altura) {
 
 
 String classificarMasculino(double imc) {
-    return "PENDENTE";
+    String resultado = "";
+
+    if (imc >= 40) {
+        resultado = "Obesidade Mórbida";
+    } else if (imc >= 30) {
+        resultado = "Obesidade Moderada";
+    } else if (imc >= 25) {
+        resultado = "Obesidade Leve";
+    } else if (imc >= 20) {
+        resultado = "Normal";
+    } else {
+        resultado = "Abaixo do Normal";
+    }
+
+    return resultado;
 }
 
-
 String classificarFeminino(double imc) {
-    return "PENDENTE";
+    String resultado = "";
+
+    if (imc >= 39) {
+        resultado = "Obesidade Mórbida";
+    } else if (imc >= 29) {
+        resultado = "Obesidade Moderada";
+    } else if (imc >= 24) {
+        resultado = "Obesidade Leve";
+    } else if (imc >= 19) {
+        resultado = "Normal";
+    } else {
+        resultado = "Abaixo do Normal";
+    }
+
+    return resultado;
 }
